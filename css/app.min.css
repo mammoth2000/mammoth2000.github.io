@@ -12,8 +12,13 @@ body{
     background:linear-gradient(175deg, #1f1d15 0%, #0a3a62 100%)
 }
 .navbar{
+    overflow: hidden;
     box-shadow:none;
-    background:#F6C511
+    background:#F6C511;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1100;
 }
 .navbar .nav-item .nav-link{
     color:#fff !important;

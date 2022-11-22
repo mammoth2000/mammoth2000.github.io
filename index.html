@@ -604,5 +604,20 @@
         }, 1500);
       });
     </script>
+
+<script>
+  $(function() {
+  //caches a jQuery object containing the header element
+  var header = $('.navbar');
+  $(window).scroll(function() {
+     var scroll = $(window).scrollTop();
+     if (scroll >= header.height()) {
+       header.fadeOut();
+     } else {
+      header.fadeIn();
+    }
+  });
+});
+  </script>
   </body>
 </html>
