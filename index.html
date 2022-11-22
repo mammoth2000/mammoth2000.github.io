@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
+    <link href="./css/app.min.css" rel="stylesheet" />
+    <title>Mammoth Money</title>
+    <link rel="icon" href="./images/logo.png" type="image/png" />
+  </head>
+
+  <body>
+    <!--Main Navigation-->
+    <header>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="./index.html"
+            ><img src="./Images/logo.png" width="120px" alt="Logo"
+          /></a>
+          <!-- Collapse button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#basicExampleNav"
+            aria-controls="basicExampleNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="basicExampleNav">
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto d-flex align-items-center">
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="fab fa-telegram-plane fa-2x"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="fab fa-twitter fa-2x"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="btn nav-btn" href="#">Connect Wallet</a>
+              </li>
+            </ul>
+            <!-- Links -->
+          </div>
+          <!-- Collapsible content -->
+        </div>
+      </nav>
+      <!--/.Navbar-->
+    </header>
+    <!--Main Navigation-->
+    <main>
+      <section class="py-5" id="intro">
+        <div class="container">
+          <div class="row mt-5">
+            <div
+              class="col-sm-12 d-flex justify-content-center align-items-center flex-column"
+            >
+              <h1 class="header-title display-1">Welcome to Mammoth Money</h1>
+
+              <div class="container-button mt-4">
+                <a href="#" class="btn" target="__blank" role="button"
+                  >Connect Wallet</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="buy_info">
+        <div class="container-fluid">
+          <div class="row flex-row d-flex justify-content-center">
+            <div class="col-sm mb-4 mb-md-0">
+              <h2 class="text-white font-weight-bold">Buy with Bertha</h2>
+              <div class="card">
+                <div class="card-header p-0 bg-white">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link active"
+                        id="overview-tab"
+                        data-toggle="tab"
+                        href="#overview"
+                        role="tab"
+                        aria-controls="overview"
+                        aria-selected="true"
+                        >OVERVIEW</a
+                      >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link"
+                        id="buy-tab"
+                        data-toggle="tab"
+                        href="#buy"
+                        role="tab"
+                        aria-controls="buy"
+                        aria-selected="false"
+                        >BUY</a
+                      >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link"
+                        id="sell-tab"
+                        data-toggle="tab"
+                        href="#sell"
+                        role="tab"
+                        aria-controls="sell"
+                        aria-selected="false"
+                        >SELL</a
+                      >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link"
+                        id="transfer-tab"
+                        data-toggle="tab"
+                        href="#transfer"
+                        role="tab"
+                        aria-controls="transfer"
+                        aria-selected="false"
+                        >TRANSFER</a
+                      >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link"
+                        id="governance-tab"
+                        data-toggle="tab"
+                        href="#governance"
+                        role="tab"
+                        aria-controls="governance"
+                        aria-selected="false"
+                        >GOVERNANCE</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="overview"
+                      role="tabpanel"
+                      aria-labelledby="overview-tab"
+                    >
+                      <div
+                        class="row d-flex justify-content-center align-items-center text-center"
+                      >
+                        <div class="col-sm">
+                          <img src="./Images/logo.png" width="40px" alt="..." />
+                          <h6 class="text-muted">Balance</h6>
+                          <p class="text-muted">...<br />MAMMOTH</p>
+                        </div>
+                        <div class="col-sm">
+                          <img
+                            src="./Images/Stake.png"
+                            width="40px"
+                            alt="..."
+                          />
+                          <h6 class="text-muted">Stake</h6>
+                          <p class="text-muted">...<br />%</p>
+                        </div>
+                      </div>
+                      <p>
+                        MAMMOTH.TUSK.MONEY is a future-proof way to compound profits
+                        made on BSC. MAMMOTH is our store of value on the
+                        Binance Smart Chain. A transaction fee of 10% is charged
+                        on all transfers of the MAMMOTH token to create a
+                        perpetual community trust. These fees are split evenly
+                        between payments to existing holders and locked
+                        liquidity.
+                      </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="buy" role="tabpanel">
+                      <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="text" class="form-control" id="amount" />
+                        <a
+                          class="form-text d-flex justify-content-end text-muted"
+                          >Set Destination
+                        </a>
+                      </div>
+                      <button type="submit" class="btn">Buy</button>
+                      <small class="d-flex text-muted mt-2">
+                        *trading here is cheaper and fully funds the treasury
+                      </small>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="sell"
+                      role="tabpanel"
+                      aria-labelledby="sell-tab"
+                    >
+                      <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="MAMMOTH"
+                          id="amount"
+                        />
+                      </div>
+                      <button type="submit" class="btn">Sell</button>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="transfer"
+                      role="tabpanel"
+                      aria-labelledby="transfer-tab"
+                    >
+                      <div class="form-group">
+                        <label for="recipient">Recipient</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Address"
+                          id="recipient"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="MAMMOTH"
+                          id="amount"
+                        />
+                      </div>
+                      <button type="submit" class="btn">Transfer</button>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="governance"
+                      role="tabpanel"
+                      aria-labelledby="governance-tab"
+                    >
+                      <h5>Rebalance Graveyard - ...</h5>
+                      <button class="btn mb-4">Rebalance (not common)</button>
+                      <h5>Liquidity Drive - ... unclaimed</h5>
+                      <button class="btn">Claim (not common)</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <h2 class="text-white font-weight-bold">Info</h2>
+              <div class="card">
+                <div class="card-body">
+                  <h5>Token Address</h5>
+                  <p>0xe9e7cea3dedca5984780bafc599bd69add087d56</p>
+                  <p>Tutorial - <small>https://youtu.be/e_lHSvsh_qE</small></p>
+                  <p>
+                    Audit -
+                    <small
+                      >https://solidity.finance/audits/MAMMOTHMoney/</small
+                    >
+                  </p>
+                  <h5>Buy</h5>
+                  <div
+                    class="d-flex flex-column justify-content-start align-items-start"
+                  >
+                    <a href="#" class="btn">Buy on Pancake Swap</a>
+                    <a href="#">Pancake Swap Liquidity (tax-free)</a>
+                    <a href="#">PancakeSwap</a>
+                  </div>
+                  <h5>Token Tracker</h5>
+                  <p>https://bscscan.com/token/0xE28...2F688</p>
+                  <h5>Price & Charting</h5>
+                  <p>https://charts.bogged.finance/?c=bsc&t=0xE283D...2F688</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm">
+              <div style="height: 600px" class="mb-4">
+                <chart-embed
+                  address="0xe9e7cea3dedca5984780bafc599bd69add087d56"
+                  chain="bsc"
+                  charttype="candles"
+                  theme="bg:ffffff|bg2:f6c513|primary:7d5217|secondary:1BC870FF|text:000000|text2:111111|candlesUp:1BC870FF|candlesDown:ff4976ff|chartLine:018CF0FF"
+                  defaultinterval="1h"
+                  showchartbutton="true"
+                ></chart-embed>
+              </div>
+              <script async="" type="module">
+                import { register } from "https://public.bog-general-api.com/static/chart/main.js";
+                register("chart-embed");
+              </script>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="guide" class="py-5">
+        <div class="container-fluid">
+          <div class="sec-heading text-white">
+            <h2 class="display-5 font-weight-bold">MAMMOTH Mini Guide</h2>
+            <p class="text-center lead">
+              MAMMOTH.TUSK.MONEY's token is a permissionless system for economic
+              inclusion and helps its community accumulate wealth through 10%
+              fees/burns on every transaction.
+            </p>
+          </div>
+          <div
+            class="row d-flex justify-content-center align-items-center text-center"
+          >
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="card rounded-sm">
+                  <div class="card-body text-center">
+                    <div>
+                      <img src="./Images/Bonds.png" alt="Bonds" />
+                      <h5 class="mb-0">Bonds</h5>
+                    </div>
+                    <div>
+                      <p class="detail-text">
+                        MAMMOTH.TUSK.MONEY is designed to work well on both desktop
+                        and mobile. A sleek dark theme keeps you in the zone,
+                        WINNING
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card rounded-sm">
+                  <div class="card-body text-center">
+                    <div>
+                      <img src="./Images/Deposits.png" alt="Deposits" />
+                      <h5 class="mb-0">Deposits</h5>
+                    </div>
+                    <div>
+                      <p class="detail-text">
+                        MAMMOTH.TUSK.MONEY is designed to work well on both desktop
+                        and mobile. A sleek dark theme keeps you in the zone,
+                        WINNING
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card rounded-sm">
+                  <div class="card-body text-center">
+                    <div>
+                      <img src="./Images/Maturity.png" alt="Maturity" />
+                      <h5 class="mb-0">Maturity</h5>
+                    </div>
+                    <div>
+                      <p class="detail-text">
+                        MAMMOTH.TUSK.MONEY is designed to work well on both desktop
+                        and mobile. A sleek dark theme keeps you in the zone,
+                        WINNING
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card rounded-sm">
+                  <div class="card-body text-center">
+                    <div>
+                      <img src="./Images/Payouts.png" alt="Payouts" />
+                      <h5 class="mb-0">Payouts</h5>
+                    </div>
+                    <div>
+                      <p class="detail-text">
+                        MAMMOTH.TUSK.MONEY is designed to work well on both desktop
+                        and mobile. A sleek dark theme keeps you in the zone,
+                        WINNING
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card rounded-sm">
+                  <div class="card-body text-center">
+                    <div>
+                      <img src="./Images/Rewards.png" alt="Rewards" />
+                      <h5 class="mb-0">Rewards</h5>
+                    </div>
+                    <div>
+                      <p class="detail-text">
+                        MAMMOTH.TUSK.MONEY is designed to work well on both desktop
+                        and mobile. A sleek dark theme keeps you in the zone,
+                        WINNING
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card rounded-sm">
+                  <div class="card-body text-center">
+                    <div>
+                      <img src="./Images/Rolled.png" alt="Rolled" />
+                      <h5 class="mb-0">Rolled</h5>
+                    </div>
+                    <div>
+                      <p class="detail-text">
+                        MAMMOTH.TUSK.MONEY is designed to work well on both desktop
+                        and mobile. A sleek dark theme keeps you in the zone,
+                        WINNING
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card rounded-sm">
+                  <div class="card-body text-center">
+                    <div>
+                      <img src="./Images/Rolls.png" alt="Rolls" />
+                      <h5 class="mb-0">Rolls</h5>
+                    </div>
+                    <div>
+                      <p class="detail-text">
+                        MAMMOTH.TUSK.MONEY is designed to work well on both desktop
+                        and mobile. A sleek dark theme keeps you in the zone,
+                        WINNING
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card rounded-sm">
+                  <div class="card-body text-center">
+                    <div>
+                      <img src="./Images/Withdrawn.png" alt="Withdrawn" />
+                      <h5 class="mb-0">Withdrawn</h5>
+                    </div>
+                    <div>
+                      <p class="detail-text">
+                        MAMMOTH.TUSK.MONEY is designed to work well on both desktop
+                        and mobile. A sleek dark theme keeps you in the zone,
+                        WINNING
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm text-center flex-column">
+            <p>Copyright © 2022 Mammoth Money. All Rights Reserved</p>
+            <small>
+              Disclaimer: Please do your own research before using this
+              application. To the greatest extent possible the MAMMOTH.TUSK.MONEY
+              protocol has been implemented to be accessible directly on-chain
+              without a user interface. This website and associated APIs have
+              been provided for convenience. Ultimately you are interacting with
+              no other party other than the blockchain itself and are 100%
+              responsible for your transactions. Please do your own research
+              before interacting with any contract or asset on the blockchain.
+              The MAMMOTH.TUSK.MONEY community is a decentralized autonomous
+              organization and is never liable for losses that happen using this
+              user interface or the MAMMOTH.TUSK.MONEY protocol.
+            </small>
+            <br />
+            <a href="#" class="mr-3"
+              ><i class="fab fa-telegram-plane fa-2x"></i
+            ></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <div class="loader-wrapper">
+      <img src="./Images/Animation-Transparent.gif" class="loader" />
+    </div>
+
+    <!-- JQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <!-- Bootstrap tooltips -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
+    ></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 8,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      $(window).on("load", function () {
+        setTimeout(function () {
+          $(".loader-wrapper").fadeOut(1000);
+        }, 1500);
+      });
+    </script>
+  </body>
+</html>
