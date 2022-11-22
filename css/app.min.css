@@ -52,6 +52,9 @@ main #intro .row .header-title{
     color:#fff;
     font-weight:800
 }
+
+
+
 main #intro .row .container-button{
     display:flex;
     flex-direction:row
@@ -63,10 +66,13 @@ main #intro .row .container-button .btn{
     border:3px solid #F6C511;
     border-radius:50px;
     backdrop-filter: blur(10px);
+  
+
 }
 main #intro .row .container-button .btn:hover{
     /* background:linear-gradient(to right, #0a3a62 0%, #1f1d15 100%); */
     box-shadow: 0 5px 15px #fbff00;
+ 
 }
 @media(max-width: 767px){
     main #intro .header-text{
@@ -76,6 +82,10 @@ main #intro .row .container-button .btn:hover{
     main #intro .header-title{
         text-align:center;
         font-size:3.5rem
+    }
+    main #intro .row .container-button{
+        display:flex;
+        flex-direction:column
     }
 }
 main #buy_info .row .card-header{
