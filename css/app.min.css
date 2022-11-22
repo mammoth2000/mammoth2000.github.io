@@ -65,7 +65,7 @@ main #intro .row .container-button .btn{
     backdrop-filter: blur(10px);
 }
 main #intro .row .container-button .btn:hover{
-    background:linear-gradient(to right, #0a3a62 0%, #1f1d15 100%);
+    /* background:linear-gradient(to right, #0a3a62 0%, #1f1d15 100%); */
     box-shadow: 0 5px 15px #fbff00;
 }
 @media(max-width: 767px){
